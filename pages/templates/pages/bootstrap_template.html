@@ -1,0 +1,24 @@
+{% extends 'pages/base.html' %}
+
+{% block content %}
+    <div class="row">
+        <div class="col-md-12">
+            <h1 class="text-center">Пользовательская информация</h1>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-6 offset-md-3">
+            <div class="card">
+                <div class="card-header">
+                    <h3>Данные пользователя</h3>
+                </div>
+                <div class="card-body">
+                    <p><strong>Имя:</strong> {{ user.first_name }}</p>
+                    <p><strong>Фамилия:</strong> {{ user.last_name }}</p>
+                    <p><strong>Email:</strong> {{ user.email }}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
